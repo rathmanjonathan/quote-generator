@@ -40,7 +40,7 @@ async function getQuotes() {
         apiQuotes = await resp.json();
         newQuote();
     } catch (err) {
-        getQuotes();
+        alert('something went wrong', err)
     }
 }
 
